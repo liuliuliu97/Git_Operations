@@ -1,11 +1,12 @@
-Git operations
-1.  New an directory and direct Git Bash or terminal to this directory
+[Summarized from Video](https://www.bilibili.com/video/BV1r3411F7kn/?spm_id_from=333.999.0.0)
+# Git operations
+1.  Create a directory and direct Git Bash or terminal to this directory
 ```Bash
 cd [Path]
 ```
 2.  Configuration
 set up the name and email
-```
+```bash
 git config --global user.name [user-name]
 git config --global user.email [user-email]
 ```
@@ -25,8 +26,8 @@ check file status: branch, file status(untracked, committed)
 git status
 ```
 
-git add [file_name]工作区-》缓存区
-git commit 添加提交信息， 进入vim, i-> represents insert, Esc 退出编辑， :wq-save and exit vim
+git add [file_name] 工作区-> 缓存区
+git commit 添加提交信息， 进入vim, i -> represents insert, Esc 退出编辑, :wq-save and exit vim
 
 git add [file_name]                    version 2
 git add [file_name]                       version 3
@@ -61,7 +62,7 @@ git checkout master:  all files will be back except the ignored file
 
 git branch -d [branch_name]: delete the branch, with the merge alert
 
-git branch -D [branch_name]:delete the branch directly, without confirmation
+git branch -D [branch_name]: delete the branch directly, without confirmation
 
 git checkout -b [branch_name]: create new branch and switch to this branch
 
@@ -83,7 +84,7 @@ git commit -am "version master"
 git checkout branch_temp   this content won't appear in branch_temp
 git commit -am  “different content”
 
-GitHub operations
+# GitHub operations
 1. create repository
  equal to git init 
 
@@ -107,12 +108,11 @@ git pull  : get all content form remote repository
 
 
 
-VS code with Git and GitHub
+# VS code with Git and GitHub
 1. open a folder
 2. Source Control (left panel)-> initialize repository   => git init
 3. U: Untracked, +: git add, -: cancel, A: staged , M: modified (in this status, click on the file name, different version of this file will be compared)
 "message" -> commit
 ···  source control -> more actions-> branch -> create branch 
-
 4. left down: change branch 
 publish branch : git push 
